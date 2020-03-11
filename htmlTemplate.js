@@ -28,7 +28,7 @@ module.exports.htmlVol = (vol) => `
     <h1>POD Details</h1>
     <ul>
       <li>POD LABELS: ${vol.LABELS}</li>
-      <li>POD ANNOTATIONS: ${env.ANNOTATIONS}</li>
+      <li>POD ANNOTATIONS: ${vol.ANNOTATIONS}</li>
     </ul>
     </body>
   </html>

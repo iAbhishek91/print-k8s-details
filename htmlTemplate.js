@@ -1,7 +1,7 @@
-module.exports.html = (env) => `
+module.exports.htmlEnv = (env) => `
   <html>
     <head>
-      <title> K8s metadata </title>
+      <title> K8s metadata env</title>
     </head>
     <body>
     <h1>POD Details</h1>
@@ -14,6 +14,21 @@ module.exports.html = (env) => `
     <h1>NODE Details</h1>
     <ul>
       <li>NODE NAME: ${env.NODE_NAME}</li>
+    </ul>
+    </body>
+  </html>
+`;
+
+module.exports.htmlVol = (vol) => `
+  <html>
+    <head>
+      <title> K8s metadata vol</title>
+    </head>
+    <body>
+    <h1>POD Details</h1>
+    <ul>
+      <li>POD LABELS: ${vol.LABELS}</li>
+      <li>POD ANNOTATIONS: ${env.ANNOTATIONS}</li>
     </ul>
     </body>
   </html>
